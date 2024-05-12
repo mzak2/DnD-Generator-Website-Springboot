@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>DnD Gen Home!</title>
+</head>
+<body>
+<h2>Welcome to DnD generator!</h2>
+
+<!-- Iterate over the list of categories -->
+<ul>
+    <li th:each="category : ${category}">
+        <span th:text="${category.getCategory_name}"></span>
+        <!-- Assuming category has a property 'categoryName', replace it with the actual property name if different -->
+    </li>
+</ul>
+</body>
+</html>

@@ -1,12 +1,14 @@
 package com.dnd.gen.demo.service;
 import com.dnd.gen.demo.domain.Category;
 import com.dnd.gen.demo.domain.Subcategory;
+import org.springframework.stereotype.Service;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+@Service
 public class RollTableService {
 
     public static String rollTownEvent(Connection connection) throws SQLException{
